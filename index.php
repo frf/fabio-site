@@ -137,6 +137,7 @@
             </div>
         </div>
     </div>
-
+<!--skill section end -->
+<script src="js/skill-start.js"></script>
 </body>
 </html>
