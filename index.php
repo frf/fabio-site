@@ -43,6 +43,7 @@
     
 </head>
 <body  class="royal_loader">
+    <div class="loading-spiner-holder" data-loading ><div class="loading-spiner"><img src="img/loader.gif" /></div></div>
     <div class="navigation clearfix">
         <div class="container">
             
