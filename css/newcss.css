@@ -10,6 +10,7 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
+
 .social-link {
     transition: none 0s ease 0s;
 }
@@ -57,23 +58,26 @@ a, a:hover, a:focus {
     width: 100%;
 }
 .logo {
-    border: 7px solid rgba(255, 255, 255, 0.3);
-    border-radius: 90px;
-    height: 100px;
-    margin: -90px auto auto;
-    overflow: hidden;
-    position: relative;
-    width: 100px;
-    z-index: 1;
+    width:175px;
+    height:175px;
+    margin:auto;
+    margin-top:-90px;
+    border-radius:90px;
+    -webkit-border-radius:90px;
+    border:10px solid rgba(255,255,255,0.3);
+    overflow:hidden;
+    position:relative;
+    z-index:1;
 }
 .logo img {
-    border-radius: 90px;
-    height: 155px !important;
-    left: 0 !important;
-    overflow: hidden;
-    position: absolute;
-    top: 0 !important;
-    width: 155px !important;
+    width:155px !important;
+    height:155px !important;
+    border-radius:90px;
+    -webkit-border-radius:90px;
+    overflow:hidden;
+    position:absolute;
+    left:0px !important;
+    top:0px !important;
 }
 .home-text {
     padding-top: 20px;
@@ -100,7 +104,7 @@ a, a:hover, a:focus {
     padding-top: 80px;
 }
 .navigation {
-    background-color: #424242;
+    background-color: #000000;
 }
 .navigation .navbar {
     margin-bottom: 0;

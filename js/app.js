@@ -38,37 +38,19 @@ app.config(function($routeProvider) {
     $routeProvider.when('/contact', {templateUrl: 'pages/contact.html',
           controller: 'ContactCtrl',
           activetab: 'contact'});
-}).run(['$rootScope', '$http', '$browser', '$timeout', "$route", 
+}).run(['$rootScope', '$http', '$browser', '$timeout', "$route",
     function ($scope, $http, $browser, $timeout, $route) {
 
+    $scope.isViewLoading = "hidden";
+    $scope.$on('$routeChangeStart', function() {
+        console.log("START");
+        console.log($scope.isViewLoading);
+        $scope.isViewLoading = "";
+    });
     $scope.$on("$routeChangeSuccess", function (scope, next, current) {
-        console.log(next);
+        console.log("SUCESS");
         $scope.part = $route.current.activetab;
+        $scope.isViewLoading = "hidden";
     });
        
 }]);
-
-app.module('directive.loading', [])
-
-    .directive('loading',   ['$http' ,function ($http)
-    {
-        return {
-            restrict: 'A',
-            link: function (scope, elm, attrs)
-            {
-                scope.isLoading = function () {
-                    return $http.pendingRequests.length > 0;
-                };
-
-                scope.$watch(scope.isLoading, function (v)
-                {
-                    if(v){
-                        elm.show();
-                    }else{
-                        elm.hide();
-                    }
-                });
-            }
-        };
-
-    }]);

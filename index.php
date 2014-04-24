@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="example359" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt" ng-app="example359" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Script Tutorials" />
-    <title>Fabio Rocha - Site Pessoal</title>
+    <title>Fabio Rocha - Analista Desenvolvedor PHP</title>
     <meta name="description" content="Fabio Rocha de Farias - Site Angular, Slim Framework, PHP 5">
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -13,7 +13,6 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/default-theme.css" rel="stylesheet" type="text/css" />
     <link href="css/newcss.css" rel="stylesheet" type="text/css" />
-    <link href="css/blog.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -43,10 +42,9 @@
     
 </head>
 <body  class="royal_loader">
-    <div class="loading-spiner-holder" data-loading ><div class="loading-spiner"><img src="img/loader.gif" /></div></div>
     <div class="navigation clearfix">
         <div class="container">
-            
+         
         <div class="row">
             <div class="col-md-12">
                 <div style="margin-top: 44px;position: absolute;" class="hidden-xs"> 
@@ -67,6 +65,7 @@
                     
                         <div class="navbar-collapse collapse ddsmoothmenu" id="smoothmenu1">
                             <ul class="nav navbar-nav pull-right top-nav sf-menu">
+                                <img class="{{isViewLoading}}" src="img/loader.gif" style="float: left" />
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#about" ng-class="{activeSmall:part == 'about'}">Sobre</a></li>
                                 <li><a href="#skill" ng-class="{activeSmall:part == 'skill'}">Habilidades</a></li>
@@ -83,11 +82,12 @@
         </div>
     </div>
 </div>
-
-
+   
     <!-- main content -->
-    <div style="position:relative">
-        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    <div style="position:relative">     
+        
+        <div style="width:100%" ng-view>                       
+        </div>
     </div>
     <br>
     <br>
