@@ -48,7 +48,7 @@ app.controller('ContactCtrl', function($scope) {
         Contact.email    = $scope.user.email;
         Contact.msg      = $scope.user.msg;
         
-        console.log(Contact);
+        //console.log(Contact);
 
         $scope.master = angular.copy(user);
     };
