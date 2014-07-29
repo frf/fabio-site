@@ -41,7 +41,7 @@ app.config(['$httpProvider', function($httpProvider) {
 ]);
 
 app.controller('QrCtrl', function($scope,$http) {    
-    $scope.urlImage = "http://api.global.com/qr?txt=";
+    $scope.urlImage = "http://global.fabiofarias.com.br/api/qr?txt=";
 });
 
 app.controller('ContactCtrl', function($scope) {
