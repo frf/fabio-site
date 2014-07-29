@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" ng-app="example359" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt" ng-app="meuSite" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Script Tutorials" />
@@ -36,9 +36,17 @@
     <script src="js/bootstrap.min.js"></script>
     
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-resource.js"></script>
     <script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    
     <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
+    
+    
+    
+    
     
 </head>
 <body  class="royal_loader">
@@ -69,8 +77,9 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#about" ng-class="{activeSmall:part == 'about'}">Sobre</a></li>
                                 <li><a href="#skill" ng-class="{activeSmall:part == 'skill'}">Habilidades</a></li>
-                                <li><a href="#experience" ng-class="{activeSmall:part == 'experience'}">Experiências</a></li>
+                                <li><a href="#experience" ng-class="{activeSmall:part == 'experience'}">Experiências</a></li>                                
                                 <li><a href="#education" ng-class="{activeSmall:part == 'education'}">Educação</a></li>
+                                <li><a href="#apps" ng-class="{activeSmall:part == 'apps'}">Aplicativos</a></li>
                                 <li style="display: none"><a href="#project" ng-class="{activeSmall:part == 'project'}">Projetos</a></li>
                                  <!--<li><a href="#blog" ng-class="{activeSmall:part == 'blog'}">Blog</a></li>-->
                                 <li><a href="#contact" ng-class="{activeSmall:part == 'contact'}">Contato</a></li>

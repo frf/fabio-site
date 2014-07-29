@@ -12,6 +12,8 @@
 
 'use strict';
 
+//var meusControllers = angular.module('MeusControllers', []);
+
 // optional controllers
 function HomeCtrl($scope, $http) {
 }
@@ -25,11 +27,22 @@ function SkillCtrl($scope, $http, $timeout) {
 }
 function ExperienceCtrl($scope, $http, $timeout) {
 }
+function AppsCtrl($scope, $http, $timeout) {
+}
 function EducationCtrl($scope, $http, $timeout) {
 }
 function BlogCtrl($scope, $http, $timeout) {
 }
 
+app.config(['$httpProvider', function($httpProvider) {
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    }
+]);
+
+app.controller('QrCtrl', function($scope,$http) {    
+    $scope.urlImage = "http://api.global.com/qr?txt=";
+});
 
 app.controller('ContactCtrl', function($scope) {
 
